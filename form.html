@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 2px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    h1 {
+        text-align: center;
+        width: 20%;
+    }
+
+
+    table {
+        width: 70%;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 8px;
+    }
+
+    th, td {
+        /* padding: 15px; */
+        border-bottom: 1px solid #a0458b;
+        text-align: center;
+    }
+
+    input, select, textarea {
+         /* width: 100%; */
+        padding: 15px; 
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+
+    button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #a0458b;
+    }
+
+</style>
+<body>
+    <div class="container">
+    <h1>Registration Form</h1>
+    <br>
+    <table border="1" cellpadding = "20" style="text-align: center;" >
+        <tbody>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" placeholder="enter firstname"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" placeholder="enter lastname"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name = "gender" id="male" placeholder=""><label for="male">Male</label><input type="radio" name = "gender" id="female" placeholder=""><label for="female">Female</label></td>
+                
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type="date" placeholder="mm/dd/yyyy"></td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea placeholder="Enter Your Address" name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>Select Department</td>
+                <td><select name="dept" id="">
+                    <option value="BCA">BCA</option>
+                    <option value="MSCDS">MSCDS</option>
+                    <option value="BSCDS">BSCDS</option>
+                    
+                </select></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                    <button type="submit">Register</button>
+                    <button type="reset">Cancel</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br><br>
+<div class="container">
+    <h1>Login Form</h1>
+ <table>
+    <tbody>
+        <tr>
+            <td>User Name</td>
+            <td><input type="text" placeholder="Enter Username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" placeholder="Enter Password"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2">
+                <button type="submit">Login</button>
+                <button type="reset">Cancel</button>
+            </td>
+        </tr>
+    </tbody>
+ </table>
+</div>
+</body>
+</html>

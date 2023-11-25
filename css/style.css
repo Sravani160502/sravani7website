@@ -1,0 +1,17 @@
+h3{
+    color: aqua;
+}
+input{
+    border: 1px solid black;
+}
+img{
+    background-attachment:fixed;
+
+}
+body{
+    background-image: url("https://images4.alphacoders.com/610/610757.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
